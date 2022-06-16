@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/bc2e7e6aa5.js" crossorigin="anonymous"></script>
+    <style>
+        html {
+            background-image: url('school.webp');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-attachment: fixed;
+        }
+
+        body {
+
+            /* background-color: rgb(0, 119, 181,0.7); */
+            background-color: rgb(255, 255, 255, 0.4);
+            font-family: 'Goudy Bookletter 1911', serif;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Quicksand', sans-serif;
+            height: 1750px;
+
+        }
+
+
+        .main {
+            height: 1850px;
+            width: 100%;
+            position: relative;
+            top: 10px;
+        }
+
+        .heading1 {
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+
+        .heading2 {
+            font-style: italic;
+            font-size: 20px;
+            margin-top: 8px;
+            text-align: center;
+        }
+
+        .form {
+            background-color: rgba(46.27%, 0%, 66.27%, 0.9);
+            border: 2px solid rgba(46.27%, 0%, 66.27%, 0.9);
+            border-radius: 5px;
+            width: 900px;
+            height: 1500px;
+            position: absolute;
+            left: 250px;
+        }
+
+        .field1 {
+            position: absolute;
+            top: 54px;
+            left: 105px;
+
+        }
+
+        .field2 {
+            position: absolute;
+            top: 154px;
+            left: 105px;
+        }
+
+        .field3 {
+            position: absolute;
+            top: 254px;
+            left: 105px;
+
+        }
+
+        .field4 {
+            position: absolute;
+            top: 354px;
+            left: 105px;
+
+        }
+
+        .fillings1 {
+            width: 700px;
+            position: absolute;
+            top: 90px;
+            left: 105px;
+            height: 20px;
+        }
+
+        .fillings2 {
+            width: 700px;
+            position: absolute;
+            top: 190px;
+            left: 105px;
+            height: 20px;
+        }
+
+        .fillings3 {
+            width: 700px;
+            position: absolute;
+            top: 290px;
+            left: 105px;
+            height: 20px;
+        }
+
+        .fillings4 {
+            position: absolute;
+            top: 400px;
+            left: 105px;
+            font-weight: 15px;
+            color: white;
+            font-size: 23px;
+        }
+
+        .fillings5 {
+            position: absolute;
+            top: 450px;
+            left: 105px;
+            font-weight: 15px;
+            color: white;
+            font-size: 23px;
+        }
+
+        .fillings6 {
+            position: absolute;
+            top: 500px;
+            left: 105px;
+            font-weight: 15px;
+            color: white;
+            font-size: 23px;
+        }
+
+        .field1,
+        .field2,
+        .field3,
+        .field4 {
+            font-weight: 15px;
+            color: white;
+            font-size: 23px;
+        }
+
+        ::placeholder {
+            position: relative;
+            left: 7px;
+            font-family: 'Goudy Bookletter 1911', serif;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 14px;
+        }
+
+        .fillings4,
+        .fillings5,
+        .fillings6,
+        .fillings7,
+        .fillings8,
+        .fillings9 {
+            font-weight: 15px;
+            color: white;
+            font-size: 23px;
+        }
+
+        .fillings7 {
+            position: absolute;
+            top: 373px;
+            left: 130px;
+            font-weight: 15px;
+            color: white;
+            font-size: 23px;
+        }
+
+        .fillings8 {
+            position: absolute;
+            top: 423px;
+            left: 130px;
+            font-weight: 15px;
+            color: white;
+            font-size: 23px;
+        }
+
+        .fillings9 {
+            position: absolute;
+            top: 473px;
+            left: 130px;
+            font-weight: 15px;
+            color: white;
+            font-size: 23px;
+        }
+
+        .field5 {
+            position: absolute;
+            top: 570px;
+            left: 105px;
+            font-weight: 15px;
+            color: white;
+            font-size: 23px;
+        }
+
+        #taste {
+            width: 700px;
+            position: absolute;
+            top: 620px;
+            left: 105px;
+            height: 28px;
+        }
+
+        .option {
+            position: relative;
+            left: 55px;
+            font-weight: 15px;
+            color: white;
+            font-size: 23px;
+            font-family: 'Goudy Bookletter 1911', serif;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .field6 {
+            position: absolute;
+            top: 700px;
+            left: 105px;
+            font-weight: 15px;
+            color: white;
+            font-size: 23px;
+        }
+
+        .checkBox1 {
+            position: absolute;
+            top: 750px;
+            left: 105px;
+            font-weight: 15px;
+            color: white;
+            font-size: 23px;
+        }
+
+        .checkBox2 {
+            position: absolute;
+            top: 800px;
+            left: 105px;
+            font-weight: 15px;
+            color: white;
+            font-size: 23px;
+        }
+
+        .checkBox3 {
+            position: absolute;
+            top: 850px;
+            left: 105px;
+            font-weight: 15px;
+            color: white;
+            font-size: 23px;
+        }
+
+        .checkBox4 {
+            position: absolute;
+            top: 900px;
+            left: 105px;
+            font-weight: 15px;
+            color: white;
+            font-size: 23px;
+        }
+
+        .checkBox5 {
+            position: absolute;
+            top: 950px;
+            left: 105px;
+
+        }
+
+        .suggestion1,
+        .suggestion2,
+        .suggestion3,
+        .suggestion4,
+        .suggestion5 {
+            font-weight: 15px;
+            color: white;
+            font-size: 23px;
+        }
+
+        .suggestion1 {
+            position: absolute;
+            top: 720px;
+            left: 135px;
+        }
+
+        .suggestion2 {
+            position: absolute;
+            top: 770px;
+            left: 135px;
+        }
+
+        .suggestion3 {
+            position: absolute;
+            top: 820px;
+            left: 135px;
+        }
+
+        .suggestion4 {
+            position: absolute;
+            top: 870px;
+            left: 135px;
+        }
+
+        .suggestion5 {
+            position: absolute;
+            top: 920px;
+            left: 135px;
+        }
+
+        .field7 {
+            position: absolute;
+            top: 1000px;
+            left: 105px;
+        }
+
+        .write,
+        .comments {
+            font-weight: 15px;
+            color: white;
+            font-size: 23px;
+        }
+
+        textarea {
+            position: absolute;
+            top: 1060px;
+            left: 105px;
+        }
+
+        textarea ::placeholder {
+            margin: 5px;
+            font-weight: 15px;
+            color: white;
+            font-size: 23px;
+        }
+
+        .field8 {
+            position: absolute;
+            top: 1280px;
+            left: 105px;
+            font-weight: 15px;
+            color: white;
+            font-size: 23px;
+        }
+
+        #addFile {
+            position: absolute;
+            top: 1315px;
+            left: 445px;
+        }
+
+        .Submit {
+            position: absolute;
+            top: 1370px;
+            left: 105px;
+            width: 700px;
+            height: 30px;
+            background-color: yellow;
+            text-align: center;
+            font-weight: 15px;
+            color: rgb(46.27%, 0%, 66.27%);
+            font-size: 23px;
+        }
+
+        .Reset {
+            position: absolute;
+            top: 1420px;
+            left: 105px;
+            width: 700px;
+            height: 30px;
+            background-color: #9ccb9c;
+            text-align: center;
+            font-weight: 15px;
+            color: black;
+            font-size: 23px;
+        }
+        .ending {
+            position: absolute;
+            top: 1550px;
+            left: -1px;
+            width: 900px;
+            text-align: center;
+            font-weight: bold;
+            border: 2px skyblue solid;
+        }
+        .communityAd {
+            cursor: pointer;
+            height: 50px;
+            width: 70px;
+            position: absolute;
+            top: 700px;
+            left: 1300px;
+            /* border:4px solid  rgb(234, 191, 19); */
+            border: 2px solid black;
+            background-color:white;
+            position: fixed;
+            border-radius: 40%;
+        }
+        #globeIcon{
+            position: absolute;
+            left: 19px;
+            top: 23px;
+        }
+        .github {
+            text-decoration: none;
+            position: absolute;
+            top: 80px;
+            left: 1200px;
+            color: whitesmoke;
+        }
+
+
+
+
+        /* .pointer{
+            font-weight: 15px;
+            color: white;
+            font-size: 23px;
+        } */
+    </style>
+</head>
+
+<body>
+    <form action="backend.php">
+        <div class="main">
+            <p class="heading1">
+                FreeCodeCamp Web Development Course Credential Form
+            </p>
+            <p class="heading2">
+                fill the form with the appropriate credentials
+            </p>
+            <div class="form">
+                <label for="name" class="field1">Name</label><br>
+                <input type="text" class="fillings1" id="name" placeholder="Enter Your Name" name="fname"><br>
+                <label for="email" class="field2">Email</label><br>
+                <input type="text" class="fillings2" id="email" placeholder="Enter Your Email" name="femail"><br>
+                <label for="age" class="field3">Age <span style="font-size:15px; font-weight: 11px;">(Optional)</span>
+                </label><br>
+                <input type="text" class="fillings3" id="age" placeholder="Age" name="fage"><br>
+
+                <label for="referal" class="field4">Would you recommend the Community to a friend?</label><br>
+
+                <input type="radio" class="fillings4" id="referal" name="freferal">
+                <p class="fillings7">Definitely</p>
+                <input type="radio" class="fillings5" id="referal" name="freferal">
+                <p class="fillings8">May Be</p>
+                <input type="radio" class="fillings6" id="referal" name="freferal">
+                <p class="fillings9">Not Sure</p>
+
+                <label for="taste" class="field5">What is(are) the features(s) you're expecting from the community?
+                </label>
+                <select name="ftaste" id="taste">
+                    <option value="" disabled selected>
+                        <p class="option">Select an Option</p>
+                    </option>
+                    <option>
+                        <p class="option">Cricket Updates</p>
+                    </option>
+                    <option>
+                        <p class="option">Premium offers for Sports goodies</p>
+                    </option>
+                    <option>
+                        <p class="option">Inter-Community Esports</p>
+                    </option>
+                </select>
+
+
+                <label for="suggestion" class="field6"> How did you got to know the Community</label>
+                <input type="checkbox" class="checkBox1">
+                <p class="suggestion1">By our Website</p>
+                <input type="checkbox" class="checkBox2">
+                <p class="suggestion2">YouTube</p>
+                <input type="checkbox" class="checkBox3">
+                <p class="suggestion3">Facebook</p>
+                <input type="checkbox" class="checkBox4">
+                <p class="suggestion4">LinkedIn</p>
+                <input type="checkbox" class="checkBox5">
+                <p class="suggestion5">Google Search Engine</p>
+
+                <label class="field7" for="comments">
+                    <p class="comments">Comments Or Suggestions</p>
+                </label>
+                <textarea rows="10" cols="85" name="fcomments" id="comments" placeholder="Write Here"> </textarea>
+
+                <label for="addFile" class="field8">Please Add any file which signifies your performance or any <br>
+                    achievement in sports (If Any)</label> <input type="file" id="addFile" class="fileAttach">
+                <button class="Submit" type="submit">
+                    Submit
+                </button>
+
+                <button class="Reset" type="reset">
+                    Reset
+                </button>
+
+                <div class="ending">
+                    <p>
+                        &nbsp This is a Web Form made for learning purpose, hereby no copyright issues will be evolved or
+                        claimed
+                        &nbsp
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </form>
+    <div class="communityAd">
+        <a title="Join the Community" href="/project1_tribute_form.html" target="_blank" class="discordIcon"> <i class="fa-solid fa-globe fa-2xl" id="globeIcon"></i> </a>
+    </div>
+
+    <a class="github" href="https://github.com/Sai-8919/TributePage/tree/ff616537b687a176110e9fedb60044d23a506a7f"
+        target="_blank">
+        Source On GitHub &nbsp; <i class="fa-brands fa-github fa-2xl"> </i>
+    </a>
+</body>
+
+</html>
